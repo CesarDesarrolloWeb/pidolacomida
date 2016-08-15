@@ -1,0 +1,1408 @@
+
+
+
+
+/*LISTA UNIDADES*/
+
+
+//unidades
+{
+
+    "unidad": [{
+        "id": "firebase",
+        "centro_id": "firebase",
+        "ciudad_id": "firebase",
+        "estado_id": "firebase",
+        "pais_id": "firebase",
+        "nombre": "string",
+        "telefonos": [{
+            "id": "firebase",
+            "unidad_id": "firebase",
+            "email": "string",
+            "compania": "string",
+            "numero": "string",
+            "activo": "boolean"
+        }],
+        "menus": [{
+            "id": "firebase",
+            "unidad_id": "firebase",
+            "email": "string",
+            "centro_id": "firebase",
+            "ciudad_id": "firebase",
+            "estado_id": "firebase",
+            "pais_id": "firebase",
+            "fecha": "date",
+            "platillos": [{
+                "id": "firebase",
+                "unidad_id": "firebase",
+                "email": "string",
+                "menu_id": "firebase",
+                "centro_id": "firebase",
+                "ciudad_id": "firebase",
+                "estado_id": "firebase",
+                "pais_id": "firebase",
+                "nombre": "string",
+                "precio": "number",
+                "ingredientes": [{
+                    "id": "firebase",
+                    "platillo_id": "firebase",
+                    "nombre": "string",
+                    "cantidad": "float",
+                    "medida": "enum",
+                    "activo": "boolean"
+                }],
+                "activo": "boolean"
+            }],
+            "activo": "boolean"
+        }],
+        "platillos": "any[]",
+        "activo": "boolean"
+    }]
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*LISTA UBICACIONES*/
+
+
+
+//ubicaciones 
+{
+
+    "ubicaciones": [{
+        "id": "firebase",
+        "email": "string",
+        "ciudad_id": "firebase",
+        "estado_id": "firebase",
+        "pais_id": "firebase",
+        "direccion": "string",
+        "lat": "string",
+        "lng": "string",
+        "unidad": {
+            "id": "firebase",
+            "centro_id": "firebase",
+            "ciudad_id": "firebase",
+            "estado_id": "firebase",
+            "pais_id": "firebase",
+            "nombre": "string",
+            "telefonos": [{
+                "id": "firebase",
+                "unidad_id": "firebase",
+                "email": "string",
+                "compania": "string",
+                "numero": "string",
+                "activo": "boolean"
+            }],
+            "menus": [{
+                "id": "firebase",
+                "unidad_id": "firebase",
+                "email": "string",
+                "centro_id": "firebase",
+                "ciudad_id": "firebase",
+                "estado_id": "firebase",
+                "pais_id": "firebase",
+                "fecha": "date",
+                "platillos": [{
+                    "id": "firebase",
+                    "unidad_id": "firebase",
+                    "email": "string",
+                    "menu_id": "firebase",
+                    "centro_id": "firebase",
+                    "ciudad_id": "firebase",
+                    "estado_id": "firebase",
+                    "pais_id": "firebase",
+                    "nombre": "string",
+                    "precio": "number",
+                    "ingredientes": [{
+                        "id": "firebase",
+                        "platillo_id": "firebase",
+                        "nombre": "string",
+                        "cantidad": "float",
+                        "medida": "enum",
+                        "activo": "boolean"
+                    }],
+                    "activo": "boolean"
+                }],
+                "activo": "boolean"
+            }],
+            "activo": "boolean"
+        }
+    }]
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*LISTA POR PAISES ESTADOS CIUDADES UNIDADES*/
+
+
+
+
+//paises
+{
+	"paises": [{
+		"id": "firebase",
+		"nombre": "string",
+		"estados": "any[]"
+	}]
+}
+//paises estados
+{
+	"paises": [{
+		"id": "firebase",
+		"nombre": "string",
+		"estados": [{
+			"id": "firebase",
+			"pais_id": "firebase",
+			"nombre": "string",
+			"ciudades": "any[]"
+		}]
+	}]
+}
+//paises estados ciudades 
+{
+	"paises": [{
+		"id": "firebase",
+		"nombre": "string",
+		"estados": [{
+			"id": "firebase",
+			"pais_id": "firebase",
+			"nombre": "string",
+			"ciudades": [{
+				"id": "firebase",
+				"estado_id": "firebase",
+				"pais_id": "firebase",
+				"nombre": "string",
+				"centros": "any[]",
+				"unidades": "any[]"
+			}]
+		}]
+	}]
+}
+
+//paises estados ciudades centros
+{
+	"paises": [{
+		"id": "firebase",
+		"nombre": "string",
+		"estados": [{
+			"id": "firebase",
+			"pais_id": "firebase",
+			"nombre": "string",
+			"ciudades": [{
+				"id": "firebase",
+				"estado_id": "firebase",
+				"pais_id": "firebase",
+				"nombre": "string",
+				"centros": [{
+					"id": "firebase",
+					"ciudad_id": "firebase",
+					"estado_id": "firebase",
+					"pais_id": "firebase",
+					"nombre": "string",
+					"unidades": "any[]"
+				}],
+				"unidades": "any[]"
+			}]
+		}]
+	}]
+}
+
+//paises estados ciudades centros unidades
+{
+	"paises": [{
+		"id": "firebase",
+		"nombre": "string",
+		"estados": [{
+			"id": "firebase",
+			"pais_id": "firebase",
+			"nombre": "string",
+			"ciudades": [{
+				"id": "firebase",
+				"estado_id": "firebase",
+				"pais_id": "firebase",
+				"nombre": "string",
+				"centros": [{
+					"id": "firebase",
+					"ciudad_id": "firebase",
+					"estado_id": "firebase",
+					"pais_id": "firebase",
+					"nombre": "string",
+					"unidades": [{
+						"id": "firebase",
+						"centro_id": "firebase",
+						"ciudad_id": "firebase",
+						"estado_id": "firebase",
+						"pais_id": "firebase",
+						"nombre": "string",
+						"telefonos": "any[]",
+						"ubicacion": "any",
+						"menus": "any[]",
+						"platillos": "any[]",
+						"activo": "boolean"
+					}]
+				}],
+				"unidades": "any[]"
+			}]
+		}]
+	}]
+}
+
+//paises estados ciudades centros unidades menus
+{
+	"paises": [{
+		"id": "firebase",
+		"nombre": "string",
+		"estados": [{
+			"id": "firebase",
+			"pais_id": "firebase",
+			"nombre": "string",
+			"ciudades": [{
+				"id": "firebase",
+				"estado_id": "firebase",
+				"pais_id": "firebase",
+				"nombre": "string",
+				"centros": [{
+					"id": "firebase",
+					"ciudad_id": "firebase",
+					"estado_id": "firebase",
+					"pais_id": "firebase",
+					"nombre": "string",
+					"unidades": [{
+						"id": "firebase",
+						"centro_id": "firebase",
+						"ciudad_id": "firebase",
+						"estado_id": "firebase",
+						"pais_id": "firebase",
+						"nombre": "string",
+						"telefonos": "any[]",
+						"ubicacion": "any",
+						"menus": [{
+							"id": "firebase",
+							"unidad_id": "firebase",
+							"email": "string",
+							"centro_id": "firebase",
+							"ciudad_id": "firebase",
+							"estado_id": "firebase",
+							"pais_id": "firebase",
+							"fecha": "date",
+							"platillos": "any[]",
+							"activo": "boolean"
+						}],
+						"platillos": "any[]",
+						"activo": "boolean"
+					}]
+				}],
+				"unidades": "any[]"
+			}]
+		}]
+	}]
+}
+
+//paises estados ciudades centros unidades menus platillos
+{
+	"paises": [{
+		"id": "firebase",
+		"nombre": "string",
+		"estados": [{
+			"id": "firebase",
+			"pais_id": "firebase",
+			"nombre": "string",
+			"ciudades": [{
+				"id": "firebase",
+				"estado_id": "firebase",
+				"pais_id": "firebase",
+				"nombre": "string",
+				"centros": [{
+					"id": "firebase",
+					"ciudad_id": "firebase",
+					"estado_id": "firebase",
+					"pais_id": "firebase",
+					"nombre": "string",
+					"unidades": [{
+						"id": "firebase",
+						"centro_id": "firebase",
+						"ciudad_id": "firebase",
+						"estado_id": "firebase",
+						"pais_id": "firebase",
+						"nombre": "string",
+						"telefonos": "any[]",
+						"ubicacion": "any",
+						"menus": [{
+							"id": "firebase",
+							"unidad_id": "firebase",
+							"email": "string",
+							"centro_id": "firebase",
+							"ciudad_id": "firebase",
+							"estado_id": "firebase",
+							"pais_id": "firebase",
+							"fecha": "date",
+							"platillos": [{
+								"id": "firebase",
+								"unidad_id": "firebase",
+								"email": "string",
+								"menu_id": "firebase",
+								"centro_id": "firebase",
+								"ciudad_id": "firebase",
+								"estado_id": "firebase",
+								"pais_id": "firebase",
+								"nombre": "string",
+								"precio": "number",
+								"ingredientes": "any[]",
+								"activo": "boolean"
+							}],
+							"activo": "boolean"
+						}],
+						"platillos": "any[]",
+						"activo": "boolean"
+					}]
+				}],
+				"unidades": "any[]"
+			}]
+		}]
+	}]
+}
+
+
+
+//paises estados ciudades centros unidades menus platillos ingredientes
+{
+	"paises": [{
+		"id": "firebase",
+		"nombre": "string",
+		"estados": [{
+			"id": "firebase",
+			"pais_id": "firebase",
+			"nombre": "string",
+			"ciudades": [{
+				"id": "firebase",
+				"estado_id": "firebase",
+				"pais_id": "firebase",
+				"nombre": "string",
+				"centros": [{
+					"id": "firebase",
+					"ciudad_id": "firebase",
+					"estado_id": "firebase",
+					"pais_id": "firebase",
+					"nombre": "string",
+					"unidades": [{
+						"id": "firebase",
+						"centro_id": "firebase",
+						"ciudad_id": "firebase",
+						"estado_id": "firebase",
+						"pais_id": "firebase",
+						"nombre": "string",
+						"telefonos": "any[]",
+						"ubicacion": "any",
+						"menus": [{
+							"id": "firebase",
+							"unidad_id": "firebase",
+							"email": "string",
+							"centro_id": "firebase",
+							"ciudad_id": "firebase",
+							"estado_id": "firebase",
+							"pais_id": "firebase",
+							"fecha": "date",
+							"platillos": [{
+								"id": "firebase",
+								"unidad_id": "firebase",
+								"email": "string",
+								"menu_id": "firebase",
+								"centro_id": "firebase",
+								"ciudad_id": "firebase",
+								"estado_id": "firebase",
+								"pais_id": "firebase",
+								"nombre": "string",
+								"precio": "number",
+								"ingredientes": [{
+									"id": "firebase",
+									"platillo_id": "firebase",
+									"nombre": "string",
+									"cantidad": "float",
+									"medida": "enum",
+									"activo": "boolean"
+								}],
+								"activo": "boolean"
+							}],
+							"activo": "boolean"
+						}],
+						"platillos": "any[]",
+						"activo": "boolean"
+					}]
+				}],
+				"unidades": "any[]"
+			}]
+		}]
+	}]
+}
+
+
+//paises estados ciudades unidades 
+{
+	"paises": [{
+		"id": "firebase",
+		"nombre": "string",
+		"estados": [{
+			"id": "firebase",
+			"pais_id": "firebase",
+			"nombre": "string",
+			"ciudades": [{
+				"id": "firebase",
+				"estado_id": "firebase",
+				"pais_id": "firebase",
+				"nombre": "string",
+				"centros": "any[]",
+				"unidades": [{
+					"id": "firebase",
+					"email": "string",
+					"ciudad_id": "firebase",
+					"estado_id": "firebase",
+					"pais_id": "firebase",
+					"nombre": "string",
+					"telefono": "any[]",
+					"ubicacion": "any",
+					"menus": "any[]",
+					"platillos": "any[]",
+					"activo": "boolean"
+				}]
+			}]
+		}]
+	}]
+}
+
+
+//paises estados ciudades unidades menus
+{
+	"paises": [{
+		"id": "firebase",
+		"nombre": "string",
+		"estados": [{
+			"id": "firebase",
+			"pais_id": "firebase",
+			"nombre": "string",
+			"ciudades": [{
+				"id": "firebase",
+				"estado_id": "firebase",
+				"pais_id": "firebase",
+				"nombre": "string",
+				"centros": "any[]",
+				"unidades": [{
+					"id": "firebase",
+					"email": "string",
+					"ciudad_id": "firebase",
+					"estado_id": "firebase",
+					"pais_id": "firebase",
+					"nombre": "string",
+					"telefono": "any[]",
+					"ubicacion": "any",
+					"menus": [{
+						"id": "firebase",
+						"unidad_id": "firebase",
+						"email": "string",
+						"fecha": "date",
+						"platillos": "any[]",
+						"activo": "boolean"
+					}],
+					"platillos": "any[]",
+					"activo": "boolean"
+				}]
+			}]
+		}]
+	}]
+}
+
+//paises estados ciudades unidades menus platillos
+{
+	"paises": [{
+		"id": "firebase",
+		"nombre": "string",
+		"estados": [{
+			"id": "firebase",
+			"pais_id": "firebase",
+			"nombre": "string",
+			"ciudades": [{
+				"id": "firebase",
+				"estado_id": "firebase",
+				"pais_id": "firebase",
+				"nombre": "string",
+				"centros": "any[]",
+				"unidades": [{
+					"id": "firebase",
+					"email": "string",
+					"ciudad_id": "firebase",
+					"estado_id": "firebase",
+					"pais_id": "firebase",
+					"nombre": "string",
+					"telefono": "any[]",
+					"ubicacion": "any",
+					"menus": [{
+						"id": "firebase",
+						"unidad_id": "firebase",
+						"email": "string",
+						"fecha": "date",
+						"platillos": [{
+							"id": "firebase",
+							"unidad_id": "firebase",
+							"email": "string",
+							"menu_id": "firebase",
+							"ciudad_id": "firebase",
+							"estado_id": "firebase",
+							"pais_id": "firebase",
+							"nombre": "string",
+							"precio": "number",
+							"ingredientes": "any[]",
+							"activo": "boolean"
+						}],
+						"activo": "boolean"
+					}],
+					"platillos": "any[]",
+					"activo": "boolean"
+				}]
+			}]
+		}]
+	}]
+}
+
+
+
+//paises estados ciudades unidades menus platillos ingredientes
+{
+	"paises": [{
+		"id": "firebase",
+		"nombre": "string",
+		"estados": [{
+			"id": "firebase",
+			"pais_id": "firebase",
+			"nombre": "string",
+			"ciudades": [{
+				"id": "firebase",
+				"estado_id": "firebase",
+				"pais_id": "firebase",
+				"nombre": "string",
+				"centros": "any[]",
+				"unidades": [{
+					"id": "firebase",
+					"email": "string",
+					"ciudad_id": "firebase",
+					"estado_id": "firebase",
+					"pais_id": "firebase",
+					"nombre": "string",
+					"telefono": "any[]",
+					"ubicacion": "any",
+					"menus": [{
+						"id": "firebase",
+						"unidad_id": "firebase",
+						"email": "string",
+						"fecha": "date",
+						"platillos": [{
+							"id": "firebase",
+							"unidad_id": "firebase",
+							"email": "string",
+							"menu_id": "firebase",
+							"ciudad_id": "firebase",
+							"estado_id": "firebase",
+							"pais_id": "firebase",
+							"nombre": "string",
+							"precio": "number",
+							"ingredientes": [{
+								"id": "firebase",
+								"platillo_id": "firebase",
+								"unidad_id": "firebase",
+								"email": "string",
+								"menu_id": "firebase",
+								"nombre": "string",
+								"cantidad": "float",
+								"medida": "enum",
+								"activo": "boolean"
+							}],
+							"activo": "boolean"
+						}],
+						"activo": "boolean"
+					}],
+					"platillos": "any[]",
+					"activo": "boolean"
+				}]
+			}]
+		}]
+	}]
+}
+
+
+//paises estados ciudades unidades platillos
+{
+	"paises": [{
+		"id": "firebase",
+		"nombre": "string",
+		"estados": [{
+			"id": "firebase",
+			"pais_id": "firebase",
+			"nombre": "string",
+			"ciudades": [{
+				"id": "firebase",
+				"estado_id": "firebase",
+				"pais_id": "firebase",
+				"nombre": "string",
+				"centros": "any[]",
+				"unidades": [{
+					"id": "firebase",
+					"email": "string",
+					"ciudad_id": "firebase",
+					"estado_id": "firebase",
+					"pais_id": "firebase",
+					"nombre": "string",
+					"telefono": "any[]",
+					"ubicacion": "any",
+					"menus": "any[]",
+					"platillos": [{
+						"id": "firebase",
+						"unidad_id": "firebase",
+						"email": "string",
+						"ciudad_id": "firebase",
+						"estado_id": "firebase",
+						"pais_id": "firebase",
+						"nombre": "string",
+						"precio": "number",
+						"ingredientes": "any[]",
+						"activo": "boolean"
+					}],
+					"activo": "boolean"
+				}]
+			}]
+		}]
+	}]
+}
+
+
+//paises estados ciudades unidades platillos ingredientes
+{
+	"paises": [{
+		"id": "firebase",
+		"nombre": "string",
+		"estados": [{
+			"id": "firebase",
+			"pais_id": "firebase",
+			"nombre": "string",
+			"ciudades": [{
+				"id": "firebase",
+				"estado_id": "firebase",
+				"pais_id": "firebase",
+				"nombre": "string",
+				"centros": "any[]",
+				"unidades": [{
+					"id": "firebase",
+					"email": "string",
+					"ciudad_id": "firebase",
+					"estado_id": "firebase",
+					"pais_id": "firebase",
+					"nombre": "string",
+					"telefono": "any[]",
+					"ubicacion": "any",
+					"menus": "any[]",
+					"platillos": [{
+						"id": "firebase",
+						"unidad_id": "firebase",
+						"email": "string",
+						"ciudad_id": "firebase",
+						"estado_id": "firebase",
+						"pais_id": "firebase",
+						"nombre": "string",
+						"precio": "number",
+						"ingredientes": [{
+							"id": "firebase",
+							"platillo_id": "firebase",
+							"unidad_id": "firebase",
+							"email": "string",
+							"nombre": "string",
+							"cantidad": "float",
+							"medida": "enum",
+							"activo": "boolean"
+						}],
+						"activo": "boolean"
+					}],
+					"activo": "boolean"
+				}]
+			}]
+		}]
+	}]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Todo
+{
+	"paises": [{
+		"id": "firebase",
+		"nombre": "string",
+		"estados": [{
+			"id": "firebase",
+			"pais_id": "firebase",
+			"nombre": "string",
+			"ciudades": [{
+				"id": "firebase",
+				"estado_id": "firebase",
+				"pais_id": "firebase",
+				"nombre": "string",
+				"centros": [{
+					"id": "firebase",
+					"ciudad_id": "firebase",
+					"estado_id": "firebase",
+					"pais_id": "firebase",
+					"nombre": "string",
+					"unidades": [{
+						"id": "firebase",
+						"centro_id": "firebase",
+						"ciudad_id": "firebase",
+						"estado_id": "firebase",
+						"pais_id": "firebase",
+						"nombre": "string",
+						"telefono": [{
+							"id": "firebase",
+							"unidad_id": "firebase",
+							"email": "string",
+							"compania": "string",
+							"numero": "string",
+							"activo": "boolean"
+						}],
+						"ubicacion": {
+							"id": "firebase",
+							"unidad_id": "firebase",
+							"email": "string",
+							"direccion": "string",
+							"lat": "string",
+							"lng": "string"
+						},
+						"menus": [{
+							"id": "firebase",
+							"unidad_id": "firebase",
+							"email": "string",
+							"centro_id": "firebase",
+							"ciudad_id": "firebase",
+							"estado_id": "firebase",
+							"pais_id": "firebase",
+							"fecha": "date",
+							"platillos": [{
+								"id": "firebase",
+								"unidad_id": "firebase",
+								"email": "string",
+								"menu_id": "firebase",
+								"centro_id": "firebase",
+								"ciudad_id": "firebase",
+								"estado_id": "firebase",
+								"pais_id": "firebase",
+								"nombre": "string",
+								"precio": "number",
+								"ingredientes": [{
+									"id": "firebase",
+									"platillo_id": "firebase",
+									"nombre": "string",
+									"cantidad": "float",
+									"medida": "enum",
+									"activo": "boolean"
+								}],
+								"activo": "boolean"
+							}],
+							"activo": "boolean"
+						}],
+						"platillos": [{
+							"id": "firebase",
+							"unidad_id": "firebase",
+							"email": "string",
+							"ciudad_id": "firebase",
+							"estado_id": "firebase",
+							"pais_id": "firebase",
+							"nombre": "string",
+							"precio": "number",
+							"ingredientes": [{
+								"id": "firebase",
+								"platillo_id": "firebase",
+								"nombre": "string",
+								"cantidad": "float",
+								"medida": "enum",
+								"activo": "boolean"
+							}],
+							"activo": "boolean"
+						}],
+						"activo": "boolean"
+					}]
+				}],
+				"unidades": [{
+					"id": "firebase",
+					"email": "string",
+					"ciudad_id": "firebase",
+					"estado_id": "firebase",
+					"pais_id": "firebase",
+					"nombre": "string",
+					"telefono": [{
+						"id": "firebase",
+						"unidad_id": "firebase",
+						"email": "string",
+						"compania": "string",
+						"numero": "string",
+						"activo": "boolean"
+					}],
+					"ubicacion": {
+						"id": "firebase",
+						"unidad_id": "firebase",
+						"email": "string",
+						"direccion": "string",
+						"lat": "string",
+						"lng": "string"
+					},
+					"menus": [{
+						"id": "firebase",
+						"unidad_id": "firebase",
+						"email": "string",
+						"fecha": "date",
+						"platillos": [{
+							"id": "firebase",
+							"unidad_id": "firebase",
+							"email": "string",
+							"menu_id": "firebase",
+							"ciudad_id": "firebase",
+							"estado_id": "firebase",
+							"pais_id": "firebase",
+							"nombre": "string",
+							"precio": "number",
+							"ingredientes": [{
+								"id": "firebase",
+								"platillo_id": "firebase",
+								"unidad_id": "firebase",
+								"email": "string",
+								"menu_id": "firebase",
+								"nombre": "string",
+								"cantidad": "float",
+								"medida": "enum",
+								"activo": "boolean"
+							}],
+							"activo": "boolean"
+						}],
+						"activo": "boolean"
+					}],
+					"platillos": [{
+						"id": "firebase",
+						"unidad_id": "firebase",
+						"email": "string",
+						"ciudad_id": "firebase",
+						"estado_id": "firebase",
+						"pais_id": "firebase",
+						"nombre": "string",
+						"precio": "number",
+						"ingredientes": [{
+							"id": "firebase",
+							"platillo_id": "firebase",
+							"unidad_id": "firebase",
+							"email": "string",
+							"nombre": "string",
+							"cantidad": "float",
+							"medida": "enum",
+							"activo": "boolean"
+						}],
+						"activo": "boolean"
+					}],
+					"activo": "boolean"
+				}]
+			}]
+		}]
+	}]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*OBJETOS*/
+
+//ciudades centros
+"ciudades": [{
+    "id": "firebase",
+    "estado_id": "firebase",
+    "pais_id": "firebase",
+    "nombre": "string",
+    "centros": [{
+        "id": "firebase",
+        "ciudad_id": "firebase",
+        "estado_id": "firebase",
+        "pais_id": "firebase",
+        "nombre": "string",
+        "unidades": [{
+            "id": "firebase",
+            "centro_id": "firebase",
+            "ciudad_id": "firebase",
+            "estado_id": "firebase",
+            "pais_id": "firebase",
+            "nombre": "string",
+            "telefono": [{
+                "id": "firebase",
+                "unidad_id": "firebase",
+                "email": "string",
+                "compania": "string",
+                "numero": "string",
+                "activo": "boolean"
+            }],
+            "ubicacion": {
+                "id": "firebase",
+                "unidad_id": "firebase",
+                "email": "string",
+                "direccion": "string",
+                "lat": "string",
+                "lng": "string"
+            },
+            "menus": [{
+                "id": "firebase",
+                "unidad_id": "firebase",
+                "email": "string",
+                "centro_id": "firebase",
+                "ciudad_id": "firebase",
+                "estado_id": "firebase",
+                "pais_id": "firebase",
+                "fecha": "date",
+                "platillos": [{
+                    "id": "firebase",
+                    "unidad_id": "firebase",
+                    "email": "string",
+                    "menu_id": "firebase",
+                    "centro_id": "firebase",
+                    "ciudad_id": "firebase",
+                    "estado_id": "firebase",
+                    "pais_id": "firebase",
+                    "nombre": "string",
+                    "precio": "number",
+                    "ingredientes": [{
+                        "id": "firebase",
+                        "platillo_id": "firebase",
+                        "nombre": "string",
+                        "cantidad": "float",
+                        "medida": "enum",
+                        "activo": "boolean"
+                    }],
+                    "activo": "boolean"
+                }],
+                "activo": "boolean"
+            }],
+            "platillos": [{
+                "id": "firebase",
+                "unidad_id": "firebase",
+                "email": "string",
+                "ciudad_id": "firebase",
+                "estado_id": "firebase",
+                "pais_id": "firebase",
+                "nombre": "string",
+                "precio": "number",
+                "ingredientes": [{
+                    "id": "firebase",
+                    "platillo_id": "firebase",
+                    "nombre": "string",
+                    "cantidad": "float",
+                    "medida": "enum",
+                    "activo": "boolean"
+                }],
+                "activo": "boolean"
+            }],
+            "activo": "boolean"
+        }]
+    }]
+}]
+
+
+
+
+//ciudades unidades
+"ciudades": [{
+    "id": "firebase",
+    "estado_id": "firebase",
+    "pais_id": "firebase",
+    "nombre": "string",
+    "unidades": [{
+        "id": "firebase",
+        "email": "string",
+        "ciudad_id": "firebase",
+        "estado_id": "firebase",
+        "pais_id": "firebase",
+        "nombre": "string",
+        "telefono": [{
+            "id": "firebase",
+            "unidad_id": "firebase",
+            "email": "string",
+            "compania": "string",
+            "numero": "string",
+            "activo": "boolean"
+        }],
+        "ubicacion": {
+            "id": "firebase",
+            "unidad_id": "firebase",
+            "email": "string",
+            "direccion": "string",
+            "lat": "string",
+            "lng": "string"
+        },
+        "menus": [{
+            "id": "firebase",
+            "unidad_id": "firebase",
+            "email": "string",
+            "fecha": "date",
+            "platillos": [{
+                "id": "firebase",
+                "unidad_id": "firebase",
+                "email": "string",
+                "menu_id": "firebase",
+                "ciudad_id": "firebase",
+                "estado_id": "firebase",
+                "pais_id": "firebase",
+                "nombre": "string",
+                "precio": "number",
+                "ingredientes": [{
+                    "id": "firebase",
+                    "platillo_id": "firebase",
+                    "unidad_id": "firebase",
+                    "email": "string",
+                    "menu_id": "firebase",
+                    "nombre": "string",
+                    "cantidad": "float",
+                    "medida": "enum",
+                    "activo": "boolean"
+                }],
+                "activo": "boolean"
+            }],
+            "activo": "boolean"
+        }],
+        "activo": "boolean"
+    }]
+}]
+
+
+//centros
+"centros": [{
+    "id": "firebase",
+    "ciudad_id": "firebase",
+    "estado_id": "firebase",
+    "pais_id": "firebase",
+    "nombre": "string",
+    "unidades": [{
+        "id": "firebase",
+        "centro_id": "firebase",
+        "ciudad_id": "firebase",
+        "estado_id": "firebase",
+        "pais_id": "firebase",
+        "nombre": "string",
+        "telefono": [{
+            "id": "firebase",
+            "unidad_id": "firebase",
+            "email": "string",
+            "compania": "string",
+            "numero": "string",
+            "activo": "boolean"
+        }],
+        "ubicacion": {
+            "id": "firebase",
+            "unidad_id": "firebase",
+            "email": "string",
+            "direccion": "string",
+            "lat": "string",
+            "lng": "string"
+        },
+        "menus": [{
+            "id": "firebase",
+            "unidad_id": "firebase",
+            "email": "string",
+            "centro_id": "firebase",
+            "ciudad_id": "firebase",
+            "estado_id": "firebase",
+            "pais_id": "firebase",
+            "fecha": "date",
+            "platillos": [{
+                "id": "firebase",
+                "unidad_id": "firebase",
+                "email": "string",
+                "menu_id": "firebase",
+                "centro_id": "firebase",
+                "ciudad_id": "firebase",
+                "estado_id": "firebase",
+                "pais_id": "firebase",
+                "nombre": "string",
+                "precio": "number",
+                "ingredientes": [{
+                    "id": "firebase",
+                    "platillo_id": "firebase",
+                    "nombre": "string",
+                    "cantidad": "float",
+                    "medida": "enum",
+                    "activo": "boolean"
+                }],
+                "activo": "boolean"
+            }],
+            "activo": "boolean"
+        }],
+        "activo": "boolean"
+    }]
+}]
+
+
+//unidades
+"unidades": [{
+    "id": "firebase",
+    "email": "string",
+    "ciudad_id": "firebase",
+    "estado_id": "firebase",
+    "pais_id": "firebase",
+    "nombre": "string",
+    "telefono": [{
+        "id": "firebase",
+        "unidad_id": "firebase",
+        "email": "string",
+        "compania": "string",
+        "numero": "string",
+        "activo": "boolean"
+    }],
+    "ubicacion": {
+        "id": "firebase",
+        "unidad_id": "firebase",
+        "email": "string",
+        "direccion": "string",
+        "lat": "string",
+        "lng": "string"
+    },
+    "menus": [{
+        "id": "firebase",
+        "unidad_id": "firebase",
+        "email": "string",
+        "fecha": "date",
+        "platillos": [{
+            "id": "firebase",
+            "unidad_id": "firebase",
+            "email": "string",
+            "menu_id": "firebase",
+            "ciudad_id": "firebase",
+            "estado_id": "firebase",
+            "pais_id": "firebase",
+            "nombre": "string",
+            "precio": "number",
+            "ingredientes": [{
+                "id": "firebase",
+                "platillo_id": "firebase",
+                "unidad_id": "firebase",
+                "email": "string",
+                "menu_id": "firebase",
+                "nombre": "string",
+                "cantidad": "float",
+                "medida": "enum",
+                "activo": "boolean"
+            }],
+            "activo": "boolean"
+        }],
+        "activo": "boolean"
+    }],
+    "activo": "boolean"
+}]
+
+
+//menus
+"menus": [{
+    "id": "firebase",
+    "unidad_id": "firebase",
+    "email": "string",
+    "fecha": "date",
+    "platillos": [{
+        "id": "firebase",
+        "unidad_id": "firebase",
+        "email": "string",
+        "menu_id": "firebase",
+        "ciudad_id": "firebase",
+        "estado_id": "firebase",
+        "pais_id": "firebase",
+        "nombre": "string",
+        "precio": "number",
+        "ingredientes": [{
+            "id": "firebase",
+            "platillo_id": "firebase",
+            "unidad_id": "firebase",
+            "email": "string",
+            "menu_id": "firebase",
+            "nombre": "string",
+            "cantidad": "float",
+            "medida": "enum",
+            "activo": "boolean"
+        }],
+        "activo": "boolean"
+    }],
+    "activo": "boolean"
+}]
+
+
+//platillos
+"platillos": [{
+    "id": "firebase",
+    "unidad_id": "firebase",
+    "email": "string",
+    "ciudad_id": "firebase",
+    "estado_id": "firebase",
+    "pais_id": "firebase",
+    "nombre": "string",
+    "precio": "number",
+    "ingredientes": [{
+        "id": "firebase",
+        "platillo_id": "firebase",
+        "unidad_id": "firebase",
+        "email": "string",
+        "nombre": "string",
+        "cantidad": "float",
+        "medida": "enum",
+        "activo": "boolean"
+    }],
+    "activo": "boolean"
+}]
+
+//ingredientes
+"ingredientes": [{
+    "id": "firebase",
+    "platillo_id": "firebase",
+    "unidad_id": "firebase",
+    "email": "string",
+    "nombre": "string",
+    "cantidad": "float",
+    "medida": "enum",
+    "activo": "boolean"
+}]
+
+
+
+
+
+
+
+
+
+
+
+
+/*LISTA INGREDIENTES*/
+
+
+
+"ingredientes": [{
+    "id": "firebase",
+    "platillos": [{
+        "id": "firebase",
+        "unidad_id": "firebase",
+        "email": "string",
+        "ciudad_id": "firebase",
+        "estado_id": "firebase",
+        "pais_id": "firebase",
+        "nombre": "string",
+        "precio": "number",
+        "activo": "boolean"
+    }],
+    "unidad": [{
+        "id": "firebase",
+		"email": "string",
+        "centro_id": "firebase",
+        "ciudad_id": "firebase",
+        "estado_id": "firebase",
+        "pais_id": "firebase",
+        "nombre": "string",
+        "telefonos": [{
+            "id": "firebase",
+            "unidad_id": "firebase",
+            "email": "string",
+            "compania": "string",
+            "numero": "string",
+            "activo": "boolean"
+        }],
+        "activo": "boolean"
+    }],
+    "email": "string",
+    "nombre": "string",
+    "cantidad": "float",
+    "medida": "enum",
+    "activo": "boolean"
+}]
